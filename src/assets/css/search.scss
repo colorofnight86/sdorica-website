@@ -1,0 +1,26 @@
+@import "var.scss";
+@import "global.scss";
+
+.search-page {
+  margin-top: $header-height + 30px;
+  align-self: center;
+  padding-bottom: 50px;
+  min-width: 600px;
+  background-color: $color-white;
+
+  .title-text {
+    font-size: xx-large;
+  }
+
+
+}
+
+.el-select {
+  background-color: #2aa3ef;
+  color: black;
+  width: 130px;
+}
+
+.input-with-select .el-input-group__prepend {
+  background-color: #fff;
+}

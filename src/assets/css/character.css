@@ -1,0 +1,27 @@
+.character-page {
+  margin-top: 100px;
+  align-self: center;
+  padding-bottom: 50px;
+  min-width: 600px;
+  background-color: #ffffff;
+}
+.character-page .title-text {
+  font-size: xx-large;
+}
+.character-page .image-cg {
+  width: 100%;
+}
+
+.input {
+  width: 200px;
+}
+
+.text-item .b {
+  font-size: 20px;
+  font-weight: bold;
+}
+.text-item .c {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=character.css.map */

@@ -1,0 +1,19 @@
+@import "var.scss";
+@import "global.scss";
+
+.sdorica-page {
+  margin-top: $header-height + 30px;
+  align-self: center;
+  padding-bottom: 50px;
+  min-width: 600px;
+  background-color: $color-white;
+
+  .title-text {
+    font-size: xx-large;
+  }
+}
+
+
+
+
+

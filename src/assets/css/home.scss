@@ -1,0 +1,14 @@
+@import "var.scss";
+@import "global.scss";
+
+.home-page {
+  margin-top: $header-height + 30px;
+  align-self: center;
+  padding-bottom: 50px;
+  min-width: 1000px;
+  background-color: $color-white;
+  width: 100%;
+  .title-text {
+  font-size: xx-large;
+  }
+}

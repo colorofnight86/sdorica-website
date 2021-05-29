@@ -1,0 +1,13 @@
+#app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#app .page {
+  width: 1000px;
+  align-self: center;
+}
+
+/*# sourceMappingURL=app.css.map */
