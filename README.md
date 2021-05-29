@@ -1,9 +1,11 @@
 # sdorica-website
-万象物语小站前端
-网页模板参考[music-website](https://github.com/Yin-Hongwei/music-website)
-后端见[万象物语小站前端](https://github.com/colorofnight86/sdorica-server)
-
 > A Vue.js project
+
+[万象物语](http://wxwy.dragonest.com/index/index.html) 小站-前端
+
+网页模板参考[music-website](https://github.com/Yin-Hongwei/music-website)
+
+后端见[万象物语小站前端](https://github.com/colorofnight86/sdorica-server)
 
 ## Build Setup
 
@@ -30,8 +32,11 @@ npm run e2e
 npm test
 ```
 
+## 运行
+双击根目录下的"run server.bat"文件
+
 ## 预览
-主页
+### 主页
 ![主页预览](static/home_shot.png)
-角色页
+### 角色页
 ![角色预览](static/character_shot.png)
