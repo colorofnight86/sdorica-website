@@ -3,13 +3,12 @@
     <div class="filter">
       <p class="title-text">角色筛选</p>
       <filter-table @filterSelection="getSelection"/>
-      <div class="button" style="text-align:center">
-        <el-button class="btn-primary" @click="SearchName">查询</el-button>
-      </div>
+<!--      <div class="button" style="text-align:center">-->
+<!--        <el-button class="btn-primary" @click="Search">查询</el-button>-->
+<!--      </div>-->
     </div>
     <div class="content">
       <character-thumb :character-list="characterDatas"/>
-<!--      <character-card :character-list="characterDatas"/>-->
     </div>
   </div>
 </template>
@@ -19,7 +18,7 @@ import FilterTable from '../components/FilterTable'
 import CharacterThumb from '../components/CharacterThumb'
 import CharacterCard from '../components/CharacterCard'
 // eslint-disable-next-line no-unused-vars
-import {getCharacterOfFilter, getAllCharacter} from '../api'
+import {getCharacterOfFilter} from '../api'
 
 export default {
   name: 'Home',
@@ -34,10 +33,10 @@ export default {
     }
   },
   created () {
-    this.SearchName()
+    this.Search()
   },
   methods: {
-    SearchName () {
+    Search () {
       getCharacterOfFilter(this.have, this.position, this.skill_number, this.skill_type)
         .then(res => {
           this.characterDatas = res
@@ -51,6 +50,7 @@ export default {
       this.skill_type = param.type
       this.skill_number = param.number
       this.position = param.position
+      this.Search()
     }
   }
 }
