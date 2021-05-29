@@ -1,4 +1,6 @@
 # sdorica-website
+万象物语小站前端
+网页模板参考[music-website](https://github.com/Yin-Hongwei/music-website)
 
 > A Vue.js project
 
@@ -27,4 +29,4 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
