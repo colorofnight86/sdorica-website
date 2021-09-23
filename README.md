@@ -1,11 +1,11 @@
 # sdorica-website
 > A Vue.js project
 
-[万象物语](http://wxwy.dragonest.com/index/index.html) 小站-前端
+[万象物语小站前端](http://wxwy.dragonest.com/index/index.html) 
 
 网页模板参考[music-website](https://github.com/Yin-Hongwei/music-website)
 
-后端见[万象物语小站前端](https://github.com/colorofnight86/sdorica-server)
+后端见[万象物语小站后端](https://github.com/colorofnight86/sdorica-server)
 
 ## Build Setup
 
