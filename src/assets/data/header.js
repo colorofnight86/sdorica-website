@@ -10,11 +10,13 @@ const navMsg = [{
   path: '/search'
 }, {
   name: '角色详情',
-  path: '/character/蒂卡'
-}, {
+  path: '/character/蒂卡nm'
+},
+{
   name: '添加角色',
   path: '/edit'
-}, {
+},
+{
   name: '测试页面',
   path: '/test'
 }]

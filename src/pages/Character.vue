@@ -1,9 +1,10 @@
 <template>
   <div class="character-page">
     <div class="drawing">
-      <img class="image-cg" :src="getImgSrc(characterInfo.name)" alt="立绘">
+      <img class="image-cg" :src="imgSrc" :onload="loadImg(characterInfo.name)"  alt="立绘">
     </div>
     <div class="header-info">
+      <br>
       <span v-if="!edit" @click="EditMode"><a href="javascript:">修改</a></span>
       <span v-if="edit" @click="Cancel"><a href="javascript:">取消修改</a></span>
       <span v-if="!edit" @click="NextId"><a href="javascript:">下一个</a></span>
@@ -134,6 +135,7 @@ export default {
   ],
   data () {
     return {
+      imgSrc: '../../static/img/blank_cg.png',
       edit: false,
       // disabled: true,
       have: false,
@@ -159,11 +161,11 @@ export default {
     //   // 通过更新Vuex中的store的数据，让数据发生变化
     //   this.getTemplateById()
     // }
-
   },
   methods: {
-    show () {
-      console.log(this.have)
+    // 获取图床的图片地址
+    loadImg (imgSrc) {
+      this.imgSrc = this.getImgSrc(imgSrc)
     },
     getImgSrc (name) {
       return 'https://colorofnight86.github.io/synthesis-of-nanami/img/big/' + name + '立绘.png'
@@ -179,16 +181,19 @@ export default {
           console.log(err)
         })
     },
+    // 下一个角色
     NextId () {
       getCharacterOfId(this.characterInfo.id + 1)
         .then(res => {
-          this.characterInfo = res
-          this.select = this.characterInfo.position
+          // this.characterInfo = res
+          // this.select = this.characterInfo.position
+          this.$router.push({path: `/character/${res.name}`})
         })
         .catch(err => {
           console.log(err)
         })
     },
+    // 编辑模式
     EditMode () {
       this.label = this.characterInfo.label
       this.skill1description = this.characterInfo.skill1
@@ -201,10 +206,12 @@ export default {
       this.edit = true
       // this.disabled = false
     },
+    // 取消修改
     Cancel () {
       this.edit = false
       // this.disabled = true
     },
+    // 提交修改
     Update () {
       let _this = this
       let params = new URLSearchParams()
@@ -239,6 +246,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

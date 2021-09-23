@@ -13,6 +13,13 @@
   font-size: 250px;
   font-weight: bolder;
   color: #95d2f6;
+  width: 50%;
+}
+.error-page .content {
+  width: 50%;
+}
+.error-page .text2 {
+  margin-left: 20px;
 }
 
 .h1 {

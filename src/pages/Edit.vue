@@ -6,8 +6,8 @@
       <div class="text-item">
         <span class="b">名称</span>
         <el-input class="input" v-model="input" placeholder="请输入内容" maxlength="10" show-word-limit @blur="Verify"></el-input>
-        <img src="../../dist/static/img/yes.png" width="20" height="20" v-if="available===0">
-        <img src="../../dist/static/img/no.png" width="20" height="20" v-if="available>0">
+        <img src="../../static/img/yes.png" width="20" height="20" v-if="available===0" alt="">
+        <img src="../../static/img/no.png" width="20" height="20" v-if="available>0" alt="">
         <br><br>
         <span class="b">站位</span>
         <el-select class="input" v-model="select" slot="prepend" placeholder="请选择">

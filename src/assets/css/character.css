@@ -9,7 +9,7 @@
   font-size: xx-large;
 }
 .character-page .image-cg {
-  width: 100%;
+  max-width: 100%;
 }
 
 .input {

@@ -7,9 +7,9 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 
 if (process.env.NODE_ENV === 'production') {
   /*第二层if，根据.env文件中的VUE_APP_FLAG判断是生产环境还是测试环境*/
-  if (process.env.VUE_APP_FLAG === 'pro') {
+  if (process.env.VUE_APP_FLAG === 'production') {
     //production 生产环境
-    axios.defaults.baseURL = 'http://localhost:8888';
+    axios.defaults.baseURL = 'http://47.106.113.115:8888';
   } else {
     //test 测试环境
     axios.defaults.baseURL = 'http://localhost:8888';
@@ -70,7 +70,7 @@ axios.interceptors.response.use(
 /**
  * 封装get方法
  * @param url
- * @param data
+ * @param params
  * @returns {Promise}
  */
 
